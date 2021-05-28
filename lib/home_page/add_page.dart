@@ -45,7 +45,6 @@ class _AddPageState extends State<AddPage> {
 
   Future getImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
-
     setState(() {
       _image = image;
     });
